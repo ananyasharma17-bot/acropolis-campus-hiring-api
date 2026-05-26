@@ -1,0 +1,54 @@
+{
+  "info": {
+    "name": "Acropolis Campus Hiring API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "BFHL POST Request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"data\": [\"a\", \"1\", \"334\", \"4\", \"R\", \"$\"]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/bfhl",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["bfhl"]
+        }
+      }
+    },
+    {
+      "name": "BFHL Multi-Character Test",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"data\": [\"A\", \"ABCD\", \"DOE\"]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/bfhl",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["bfhl"]
+        }
+      }
+    }
+  ]
+}
